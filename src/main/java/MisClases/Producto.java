@@ -10,11 +10,11 @@ public class Producto {
     private String producto_id;
     private String nombre;
     private String descripcion;
-    private double precio;
+    private int precio;
     private boolean disponibilidad;
     private String categoria_id;
 
-    public Producto(String producto_id, String nombre, String descripcion, double precio, boolean disponibilidad, String categoria_id) {
+    public Producto(String producto_id, String nombre, String descripcion, int precio, boolean disponibilidad, String categoria_id) {
         this.producto_id = producto_id;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -48,11 +48,11 @@ public class Producto {
         this.descripcion = descripcion;
     }
 
-    public double getPrecio() {
+    public int getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(int precio) {
         this.precio = precio;
     }
 
@@ -77,7 +77,7 @@ public class Producto {
         mostrarInformacion();
     }
 
-    public void Editar(String nuevoNombre, String nuevaDescripcion, double nuevoPrecio, boolean nuevaDisponibilidad) {
+    public void Editar(String nuevoNombre, String nuevaDescripcion, int nuevoPrecio, boolean nuevaDisponibilidad) {
         this.nombre = nuevoNombre;
         this.descripcion = nuevaDescripcion;
         this.precio = nuevoPrecio;
