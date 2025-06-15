@@ -10,12 +10,12 @@ public class Pedido {
     private String pedido_id;
     private String direccion;
     private String metodo_pago;
-    private double precio_total;
+    private int precio_total;
     private String estado_entrega;
     private String cliente_id;
     private String carrito_id;
 
-    public Pedido(String pedido_id, String direccion, String metodo_pago, double precio_total,
+    public Pedido(String pedido_id, String direccion, String metodo_pago, int precio_total,
             String estado_entrega, String cliente_id, String carrito_id) {
         this.pedido_id = pedido_id;
         this.direccion = direccion;
@@ -54,7 +54,7 @@ public class Pedido {
         return precio_total;
     }
 
-    public void setPrecio_total(double precio_total) {
+    public void setPrecio_total(int precio_total) {
         this.precio_total = precio_total;
     }
 
